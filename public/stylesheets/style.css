@@ -1,8 +1,220 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 50px;
+    font-size: 14px;
+    font-family: "Alegreya Sans SC"; /* , "Montserrat", "Verdana"; */
+    margin: 0;
 }
 
-a {
-  color: #00B7FF;
+#page {
+    width: 960px;
+    margin: auto; /* centers the page on the screen */
+    margin-bottom: 20px;
+    padding: 45px 0 0 0;
+}
+h1 {
+    font-weight: bold;
+    color: #9db402;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+/* navigation and drop down menu */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 3px 10px -2px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+
+nav ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin-right: 100px;
+    display: inline-table;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+nav ul li:hover {
+    background: rgba(0, 0, 0, .15);
+}
+
+nav ul li:hover > ul {
+    display: block;
+    /* pk added a width here */
+    width: 300px;
+}
+
+nav ul li {
+    float: left;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+nav ul li a {
+    display: block;
+    padding: 30px 20px;
+    color: #222;
+    font-size: .9em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul ul {
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+nav ul ul li {
+    float: none; position: relative;
+}
+
+nav ul ul li a {
+    padding: 15px 30px;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    width: 300px;
+}
+
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top:0;
+}
+/* end drop down menu and navigation */
+
+/* contains main image on the home page */
+.banner {
+    padding: 0 0 10px 0;
+    border: 0 solid red;
+}
+
+/* header on the home page */
+.header {
+    text-align: center;
+    border: 0 solid blue;
+}
+/* hero class contains list of 3 images of cows */
+ul.hero {
+    margin: 10px 0 0 0;
+    padding: 0;
+    align: top;
+    list-style: none;
+}
+
+ul.hero li h3 {
+    font-weight: normal;
+    color: #9db402;
+    margin-bottom: 5px;
+}
+
+
+ul.hero li img {
+    width: 313px;
+
+    margin-bottom: 0px;
+    display: block;
+}
+
+ul.hero li {
+    width: 313px;
+    margin-right: 10px;
+    float: left;
+}
+
+/* puts space between the image and text
+for list of 3 images of cows
+ */
+ul.hero li p {
+    margin-top: 5px;
+}
+ul.hero li p a {
+    color: #5e7796; /* color of the sky in middle photo of cow on home page */
+}
+ul.hero li:last-child {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+/* eliminates the margin on the right side of the last photo in the
+set of 3 on the home page so that it lines up with the above image
+ */
+ul.hero li:last-child p {
+    margin-right: 0;
+}
+
+/* photos page css */
+ul.photos {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul.photos li {
+    float: left;
+    list-style-type: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+ul.photos li:last-child {
+    margin-right: 0;
+}
+
+ul.photos li img {
+    width: 315px;
+    vertical-align: bottom;
+}
+
+/* header on the photos page */
+.photosHeader {
+    margin-bottom: 10px;
+}
+
+.photosHeader h3 {
+    font-weight: normal;
+    color: #9db402;
+}
+
+.photosHeader h1 {
+    font-weight: normal;
+    text-align: center;
+}
+/* end photos page css */
+
+footer {
+    margin-top: 10px;
+    float: left;
+    height: 50px;
+    width: 100%;
+}
+
+.footer {
+    margin: auto;
 }

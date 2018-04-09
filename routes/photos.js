@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET photos page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'AGATE Sustainable Farming' });
+    res.render('photos', { title: 'AGATE Sustainable Farming' });
 });
 
 module.exports = router;
