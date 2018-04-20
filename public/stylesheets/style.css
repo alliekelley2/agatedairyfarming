@@ -1,7 +1,7 @@
 body {
     padding: 50px;
     font-size: 14px;
-    font-family: "Alegreya Sans SC"; /* , "Montserrat", "Verdana"; */
+    font-family: "Palatino";
     margin: 0;
 }
 
@@ -11,13 +11,21 @@ body {
     margin-bottom: 20px;
     padding: 45px 0 0 0;
 }
+
 h1 {
     font-weight: bold;
     color: #9db402;
+    text-align: center;
+}
+
+h2 {
+    color: #9db402;
+    font-weight: normal;
 }
 
 h3 {
     font-weight: normal;
+    color: #9db402;
 }
 
 /* navigation and drop down menu */
@@ -28,6 +36,7 @@ h3 {
     padding: 0;
     margin: 0;
 }
+
 nav {
     width: 100%;
     position: fixed;
@@ -38,7 +47,6 @@ nav {
     box-shadow: 0 3px 10px -2px rgba(0, 0, 0, .1);
     border: 1px solid rgba(0, 0, 0, .1);
 }
-
 
 nav ul {
     list-style: none;
@@ -88,38 +96,41 @@ nav ul ul {
     background: #fff;
     position: absolute;
     top: 100%;
-    box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
-    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .1);
 }
 
 nav ul ul li {
-    float: none; position: relative;
+    float: none;
+    position: relative;
 }
 
 nav ul ul li a {
     padding: 15px 30px;
-    border-bottom: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
     width: 300px;
 }
 
 nav ul ul ul {
     position: absolute;
     left: 100%;
-    top:0;
+    top: 0;
 }
+
 /* end drop down menu and navigation */
 
 /* contains main image on the home page */
 .banner {
     padding: 0 0 10px 0;
-    border: 0 solid red;
 }
 
 /* header on the home page */
 .header {
     text-align: center;
-    border: 0 solid blue;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
+
 /* hero class contains list of 3 images of cows */
 ul.hero {
     margin: 10px 0 0 0;
@@ -130,10 +141,8 @@ ul.hero {
 
 ul.hero li h3 {
     font-weight: normal;
-    color: #9db402;
     margin-bottom: 5px;
 }
-
 
 ul.hero li img {
     width: 313px;
@@ -154,9 +163,11 @@ for list of 3 images of cows
 ul.hero li p {
     margin-top: 5px;
 }
+
 ul.hero li p a {
     color: #5e7796; /* color of the sky in middle photo of cow on home page */
 }
+
 ul.hero li:last-child {
     padding-right: 0;
     margin-right: 0;
@@ -203,11 +214,173 @@ ul.photos li img {
 }
 
 .photosHeader h1 {
-    font-weight: normal;
+     /* font-weight: normal; */
     text-align: center;
+    font-size: 40px;
 }
-/* end photos page css */
 
+/* end photos page css */
+/* environmental impacts page */
+.environImpactsHeader h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.environImpactsBody h3 { /* applies to marin, farmsteadCheese, and environImpacts page */
+    color: black;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.environImpactsBody h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.environImpactsBody p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.environImpactsBody a {
+    text-decoration: none;
+    color: #5e7796;
+}
+
+.environImpactsBody img {
+    width: 400px;
+    float: right;
+    margin: 5px 10px 5px 5px;
+}
+
+.environImpactsBody li {
+    font-size: 20px;
+}
+
+#globalWarming {
+    float: right;
+}
+
+p.caption{
+    font-size: 15px;
+}
+/* marin page */
+.marinSubheading h3 {
+    color: #9db402;
+    margin: 0;
+}
+
+/* coding tutorial page */
+.tutorial {
+    border: 3px solid #5e7796;
+    width: 870px;
+    /* height: 570px; */
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.tutorial h1 {
+    color: #5e7796;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.tutorial h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    color: black;
+}
+
+.tutorial li{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.tutorial a {
+    text-decoration: none;
+    color: #5e7796;
+}
+.tutorialSubheading h2 {
+    color: #5e7796;
+    margin-top: 10px;
+}
+
+.tutorialSubheading code {
+    font-size: 20px;
+}
+.tutorialHeader h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#html {
+    display: none;
+}
+
+#css {
+    display: none;
+}
+
+#exampleCode {
+    display: none;
+}
+
+code {
+    font-size: 16px;
+    padding: 10px;
+}
+
+#buttons {
+    margin-top: 10px;
+    width: 100%;
+    float: left;
+    border: 0px solid blue;
+    height: 50px;
+}
+.nextButton {
+    float: right;
+    width: 50px;
+}
+
+.backButton {
+    float: left;
+    width: 50px;
+}
+
+.nextButton a {
+    text-decoration: none;
+    color: #9db402;
+    font-size: 20px;
+}
+
+.backButton {
+    width: 60px;
+}
+
+.backButton a {
+    text-decoration: none;
+    color: #9db402;
+    font-size: 20px;
+}
+
+/* end coding tutorial page */
+
+/* about page */
+
+#about p {
+    font-size: 25px;
+}
+
+#about h1 {
+    font-size: 40px;
+}
 footer {
     margin-top: 10px;
     float: left;
@@ -218,3 +391,5 @@ footer {
 .footer {
     margin: auto;
 }
+
+

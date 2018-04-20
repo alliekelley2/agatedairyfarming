@@ -1,1 +1,170 @@
-<h1>Coding Tutorial</h1>
+<div class="tutorialHeader">
+    <h1>Coding Tutorial</h1>
+</div>
+<section id="basics">
+    <div class="tutorial"> <!-- contains the box that has the info on each slide -->
+            <h1>The Basics of Computer Science</h1>
+        <div class="tutorialSubheading">
+            <h2>The Definition of Computer Science and Coding</h2>
+        </div>
+        <p>
+            <li>Computer science is the study of computers and computing concepts.</li>
+            <li>Coding, often confused as being the same thing as computer science, is
+            the instructions in a computer program.</li>
+        </p>
+        <div class="tutorialSubheading">
+            <h2>Languages</h2>
+        </div>
+        <p>
+            <li>A programming language is a set of commands, instructions,
+            and other syntax used to instruct a computer to perform
+                specific tasks.</li>
+            <li>Examples: Java, Javascript, Python, and Swift.</li>
+            <li>This website was built using Javascript, HTML, and CSS. Javascript programs
+            the behavior of the webpage and is a more sophisticated and difficult
+            language than HTML and CSS, which contain standard words, rather than
+                typical programming syntax and have a more basic function.</li>
+        </p>
+    </div>
+</section>
+
+
+<section id="html">
+    <div class="tutorial">
+        <h1>HTML</h1>
+        <div class="tutorialSubheading">
+            <h2>What Is HTML?</h2>
+        </div>
+        <p>
+            <li>HTML is a programming language that defines the content on a
+            website.</li>
+            <li>HTML stands for Hyper Text Markup Language</li>
+            <li>A markup language is one that defines the elements within a
+            document using tags.</li>
+        </p>
+        <div class="tutorialSubheading">
+            <h2>Tags</h2>
+        </div>
+        <p>
+        <li>Tags are contained by angled braces, like this <code>&ltnameOfTag&gt.</code>
+                The closing tag starts with an angled brace, followed by a forward slash,
+        followed by another angled brace: <code>&lt/nameOfTag&gt.</code> In between the closing
+                and opening tag is the content that you want to be displayed on the page.</li>
+        <li>Some examples of tags are the header two tag: <code>&lth2&gt&lt/h2&gt,</code>
+                the image tag: <code> &ltimg src="whateverTheImgSrcIs"/&gt </code>(the image tage is self closing), and
+                the hyperlink tag that links one page to another: <code>&lta href="whateverTheAHrefIs"&gt&lt/&gt </code></li>
+            <li>Don't worry if you're a bit confused, getting used to the syntax of
+            programming can be difficult at first. Keep reading for a closer look at these different tags.</li>
+        </p>
+        <div class="tutorialSubheading">
+            <h2>The <code>h2</code> Tag</h2>
+        </div>
+        <p>
+            <li><code> h2 </code> stands for header two in this tag. Header two simply means
+            that this tag is a header and is the second smallest type of header.</li>
+            <li>You type text in between the opening and closing tag like so: <code>
+            &lth2&gtHello World!&lt/h2&gt. </code> The text appears like this on the page:
+            Hello World!
+            </li>
+        </p>
+        <div class="tutorialSubheading">
+            <h2>The <code> img </code> Tag</h2>
+        </div>
+        <p>
+            <li>The <code> img </code> tag displays an image on the page and looks like this
+                in code: <code> &ltimg src="imgSrc"/&gt. </code> The image tag
+                is self closing, so the forward slash is placed at the end of the opening tag.</li>
+        </p>
+        <div class="tutorialSubheading">
+            <h2>The <code> div </code> Tag</h2>
+        </div>
+        <p>
+            <li>The <code> div </code> tag is one of the most important tags in HTML and
+            looks like this in code: <code> &ltdiv class="className"&gt&lt/div&gt.</code>
+            <code>div</code> is short for division, and the <code>div</code> tag encapsulates
+            elements on the page and divides the HTML document into
+            sections.</li>
+            <li>The <code>div</code> tag also allows a programmer to group together
+            HTML elements and apply CSS styles to many elements at once.</li>
+            <li>The class of the div goes in between the quotes. Programmers
+            can name classes what they choose, but it has to be logical and
+            follow programming conventions.</li>
+        </p>
+    </div>
+</section>
+
+<section id="css">
+    <div class="tutorial">
+        <h1>CSS</h1>
+        <div class="tutorialSubheading">
+            <h2>What is CSS?</h2>
+        </div>
+        <p>
+            <li>CSS stands for cascading style sheets.</li>
+            <li>CSS describes how HTML elements are to be
+            displayed on a page.</li>
+            <li>CSS code has the name of a tag, such as <code>h2</code>, followed
+                by two curly braces (<code>{}</code>). Inside the curly braces is
+            information about how that element is going to be
+            displayed on the page.</li>
+        <li>For example, inside the curly braces <code>h2 {code to modify how content is displayed}</code> a programmer could
+                change the color of all the <code> h2 </code> tags on a site to blue by coding <code>color: blue; </code></li>
+            <li>To be more specific about a change, a programmer can use a div. A dot precedes
+            the name of the div's class. If it pertains to the h1 tag in that class, for example the programmer
+            would type: <code>.className h1 {code to modify how h1 content in div class
+                    className is displayed} </code></li>
+        </p>
+    </div>
+</section>
+
+<section id="exampleCode">
+    <div class="tutorial">
+        <h1>Example Code</h1>
+        <div class="tutorialSubheading">
+            <h2>HTML Example Code</h2>
+        </div>
+        <p>
+            <li>This is the HTML that defines part of the content on the home page:
+            the picture of the barn with the white truck and the site's title that
+            says sustainable agriculture in all caps. </li>
+            <code>
+                &ltdiv class="header"&gt </br>
+            &emsp;&lth1&gtSUSTAINABLE AGRICULTURE&lt/h1&gt </br>
+            &lt/div&gt </br>
+            &ltdiv class="banner"&gt </br>
+            &emsp;&ltimg src="images/DSC_7712.jpg"/&gt </br>
+            &lt/div&gt
+            </code>
+            <li>Click home on the navigation to see this code in action!</li>
+        </p>
+        <div class="tutorialSubheading">
+            <h2>CSS Example Code (Styles the HTML Elements Above)</h2>
+        </div>
+            <code>
+                h1 { </br>
+                &emsp;font-weight: bold; </br>
+                &emsp;color: #9db402; </br>
+                } </br>
+                &emsp;body { </br>
+                &emsp;font-size: 14px; </br>
+                &emsp;font-family: "Alegreya Sans SC"; </br>
+                } </br>
+                .header { </br>
+                &emsp;text-align: center; </br>
+                } </br>
+            </code>
+        <p>
+            <li>To learn more about coding and to write some code yourself, you
+            can visit <a href="https://www.codeacademy.com">www.codeacademy.com</a></li>
+        </p>
+    </div>
+</section>
+<div id="buttons">
+    <div class="backButton">
+        <a href="/codingTutorial" id="tutorialBack">BACK</a>
+    </div>
+    <div class="nextButton">
+        <a href="/codingTutorial" id="tutorialNext">NEXT</a>
+    </div>
+</div>
+
